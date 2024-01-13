@@ -6,8 +6,15 @@
 * {
     font-family: 'Work Sans', sans-serif;
 }
+
 .text-light-gray {
     color: #727272;
+}
+
+.section-title {
+    color: #131313;
+    font-size: 3rem;
+    font-weight: 700;
 }
 
 .btn-primary {
@@ -33,13 +40,7 @@ nav {
     align-items: center;
 }
 
-.nav-title {
-    color: #131313;
-    font-size: 3rem;
-    font-weight: 700;
-}
-
-nav > ul {
+nav>ul {
     display: flex;
 }
 
@@ -73,53 +74,101 @@ nav ul a {
     margin-top: 40px;
     width: 100%;
 }
+
 /* main styles */
-main{
+main {
     max-width: 1440px;
     margin: 0 auto;
 }
+
 /* teams style */
-.teams-container{
+.teams-container {
     display: flex;
     align-items: center;
 }
-.teams-image-container{
+
+.teams-image-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
-.teams-content{
+
+.teams-content {
     padding-left: 70px;
     padding-right: 70px;
 }
-.teams-header{
+
+.teams-header {
     font-size: 2.9rem;
 }
-.teams-header .quick-list{
+
+.teams-header .quick-list {
     color: #727272;
     font-weight: 500;
 }
-.teams-header .of-our{
+
+.teams-header .of-our {
     color: #131313;
     font-weight: 700;
 }
-.teams-header .text-features{
+
+.teams-header .text-features {
     color: #FF900E;
     font-weight: 700;
 
 }
+
+/* facts section */
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+}
+.facts-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding:30px;
+}
+.facts-card-container .cards-states{
+    font-size: 2.8rem;
+    font-weight: 600px;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.facts-card-container .cards-title{
+    color: #727272;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 5px;
+}
+/* sponsors item */
+.sponspors{
+    text-align: center;
+}
+.sponspors-image-container{
+    
+}
+
+
+
 /* media styles min devices */
 @media screen and (max-width:576px) {
     header {
         padding: 20px;
     }
-    nav, .teams-container{
+
+    nav,
+    .teams-container, 
+    .facts-card-container {
         flex-direction: column;
     }
-    .teams-image-container{
+
+    .teams-image-container {
         grid-template-columns: 1fr;
     }
-    .teams-content{
+
+    .teams-content, .facts-card-container {
         padding-left: 20px;
         padding-right: 20px;
     }
